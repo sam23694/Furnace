@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Furnace</defName>
+    <label>furnace</label>
+	<ThingClass>Building_WorkTable_HeatPush</ThingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Vent</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+	<passability>Impassable</passability>
+	<fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <blockLight>true</blockLight>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>A furnace for heating rooms to extreme temperatures to initiate combustion or as a heater for large indoor spaces such as an underground complex.</description>
+	<stuffCategories>
+		<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+    <costList>
+      <Steel>165</Steel>
+      <Component>8</Component>
+    </costList>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>600</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+  </ThingDef>
+  
+</Defs>
