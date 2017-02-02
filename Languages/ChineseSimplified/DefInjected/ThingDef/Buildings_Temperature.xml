@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Furnace.label>高温加热炉</Furnace.label>
+  <Furnace.description>用于将房间加热至极端温度，甚至发生火灾的炉子或用于大型室内空间（例如复杂的地下工程）的加热器。</Furnace.description>
+  <Furnace_Blueprint.label>高温加热炉（蓝图）</Furnace_Blueprint.label>
+  <Furnace_Frame.label>高温加热炉（建造中）</Furnace_Frame.label>
+
+
+</LanguageData>

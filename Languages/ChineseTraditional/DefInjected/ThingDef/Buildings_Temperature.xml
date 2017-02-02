@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Furnace.label>高溫加熱爐</Furnace.label>
+  <Furnace.description>用於將房間加熱至極端溫度，甚至發生火災的爐子或用於大型室內空間（例如複雜的地下工程）的加熱器。</Furnace.description>
+  <Furnace_Blueprint.label>高溫加熱爐（藍圖）</Furnace_Blueprint.label>
+  <Furnace_Frame.label>高溫加熱爐（建造中）</Furnace_Frame.label>
+
+
+</LanguageData>
