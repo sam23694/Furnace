@@ -16,7 +16,7 @@
 	<ThingDef ParentName="BuildingBase_GT">
 		<defName>Furnace</defName>
 		<label>furnace</label>
-		<ThingClass>Building_WorkTable_HeatPush</ThingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
