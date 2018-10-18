@@ -4,23 +4,26 @@
 	<ThingDef Name="BuildingBase_GT" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase_GT">
 		<defName>Furnace</defName>
 		<label>furnace</label>
+		<description>A furnace for heating rooms to extreme temperatures to initiate combustion or as a heater for large indoor spaces such as an underground complex.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Furnace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -30,6 +33,7 @@
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
 		<fillPercent>1</fillPercent>
 		<coversFloor>true</coversFloor>
 		<blockLight>true</blockLight>
@@ -41,14 +45,13 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<description>A furnace for heating rooms to extreme temperatures to initiate combustion or as a heater for large indoor spaces such as an underground complex.</description>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>150</costStuffCount>
 		<costList>
 			<Steel>165</Steel>
-			<Component>8</Component>
+			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -56,7 +59,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<startElectricalFires>true</startElectricalFires>
+				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>1000</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
@@ -83,6 +86,8 @@
 		<graphicData>
 			<texPath>Things/Building/Misc/TempControl/Vent</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
